@@ -1,6 +1,5 @@
 package com.nju.aop.dataobject;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.nju.aop.utils.excel.ExcelCell;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,7 +16,6 @@ import javax.persistence.Id;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
 public class Event {
     @Id
     private Integer id;
